@@ -146,6 +146,13 @@ p {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .project-image {
   margin-top: 15px;
   width: 300px;
@@ -169,14 +176,42 @@ a {
   color: #fff;
 }
 
-.icon {
-  border: 0;
-  background-color: transparent;
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
 }
 
 @media only screen and (max-width: 1000px) {
-  .project-container {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+
+  ul {
+    display: none;
+    background-color: #2b2d35;
+    margin: 0px;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    background-color: #2b2d35;
+  }
+
+  .logo {
+    display: none;
   }
 }
