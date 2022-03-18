@@ -1,18 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
+  /* border: 0;
+  /* font-size: 100%; */
+  /* font: inherit; */
   vertical-align: baseline;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 section {
-  height: 500px;
   background-color: #fff;
-  border: solid black 1px;
-  /* font-family: 'Poppins', sans-serif; */
 }
 
 .hero {
@@ -25,6 +22,9 @@ section {
 footer {
   height: 500px;
   background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 80px;
 }
 
 nav {
@@ -41,7 +41,6 @@ ul {
 }
 
 li {
-  /* width: 200px; */
   text-decoration: none;
 }
 
@@ -50,15 +49,23 @@ h1 {
   margin: 0px;
 }
 
+h2 {
+  font-size: 50px;
+}
+
 p {
   margin: 0px;
   font-size: 30px;
   font-weight: 300;
 }
 
+.sub-text {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .hero-area {
   display: flex;
-  /* flex-direction: column; */
   height: 100%;
   justify-content: space-between;
   align-items: center;
@@ -71,11 +78,11 @@ p {
 
 .button {
   width: 200px;
-  height: 55px;
+  height: 40px;
   background-color: coral;
   border-radius: 30px;
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 300;
   padding-top: 5px;
   margin-top: 20px;
@@ -101,4 +108,75 @@ p {
 
 .social {
   margin: 20px;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
+.headshot {
+  width: 300px;
+  border-radius: 150px;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(187, 187, 187);
+  margin: 10px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-image {
+  margin-top: 15px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 150px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ef744b;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon {
+  border: 0;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
