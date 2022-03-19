@@ -17,7 +17,7 @@
 <body>
     <section class="hero">
         <nav>
-            <img class="logo" src="src/images/Logo.png" alt="lichih's logo">
+            <a href="#"><img class="logo" src="src/images/Logo.png" alt="lichih's logo"></a>
             <ul id="nav-list">
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -26,7 +26,6 @@
             <button class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
-            </a>
         </nav>
 
         <div class="hero-area">
@@ -110,9 +109,39 @@
             </div>
         </div>
     </section>
-    <footer id="contact-me">
-        <h2>Contact me</h2>
-        <p>lichih.yen@gmail.com</p>
+    <footer>
+        <h2 id="contact-me">Contact me</h2>
+        <!-- <p>lichih.yen@gmail.com</p> -->
+
+        <div class="form-container">
+            <form method="post" name="myemailform" action="form-to-email.php">
+                <div class="label-text">
+                    <label for="fname">First Name</label>
+                </div>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <div class="label-text">
+                    <label for="lname">Last Name</label>
+                </div>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <!-- <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="australia">Australia</option>
+                    <option value="tw">Taiwan</option>
+                    <option value="southkorea">South Korea</option>
+                    <option value="other">Other</option>
+                </select> -->
+                <div class="label-text">
+                    <label for="subject">Subject</label>
+                </div>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
     </footer>
 
 
