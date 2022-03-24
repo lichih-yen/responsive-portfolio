@@ -114,37 +114,29 @@
         <!-- <p>lichih.yen@gmail.com</p> -->
 
         <div class="form-container">
-            <form method="post" name="myemailform" action="form-to-email.php">
+            <form method="POST" name="myemailform" action="https://formsubmit.co/606136a39c1e1b6cdd475e8902f59af3">
+                <input type="hidden" name="_subject" value="New Submission!">
                 <div class="label-text">
                     <label for="fname">First Name</label>
                 </div>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
                 <div class="label-text">
                     <label for="lname">Last Name</label>
                 </div>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
-                <!-- <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                    <option value="australia">Australia</option>
-                    <option value="tw">Taiwan</option>
-                    <option value="southkorea">South Korea</option>
-                    <option value="other">Other</option>
-                </select> -->
                 <div class="label-text">
                     <label for="subject">Subject</label>
                 </div>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+                    required></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" name="submit">
 
             </form>
         </div>
     </footer>
-
-
     <script src="src/app.js"></script>
 </body>
 
